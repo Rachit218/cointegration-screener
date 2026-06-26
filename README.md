@@ -28,11 +28,15 @@ If the resulting $p\text{-value}$ is strictly $< 0.05$, we reject the null hypot
 ## Quick Start & Usage
 
 **1. Clone the repository and navigate to the directory:**
-git clone [https://github.com/YourUsername/cointegration-screener.git](https://github.com/YourUsername/cointegration-screener.git)
+git clone [https://github.com/Rachit218/cointegration-screener.git](https://github.com/YourUsername/cointegration-screener.git)
 cd cointegration-screener
 
 **2. Install the required dependencies:**
-pip install pandas yfinance statsmodels streamlit
+`pip install pandas yfinance statsmodels streamlit`
 
-**3. Launch the Dashboard:**
-streamlit run app.py
+**3. Populate the data:**
+Execute the data ingestion to fetch historical price series:
+`python data_downloader.py`
+
+**4. Launch the Dashboard:**
+`streamlit run app.py`
